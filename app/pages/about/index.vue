@@ -9,19 +9,8 @@
     </div>
 </template>
 <script setup>
-import koText from "~~/locales/3/ko.json";
-import enText from "~~/locales/3/en.json";
-// https://pubbimgkcst.blob.core.windows.net/bluearchive/drops2/locales/ko.json
-// https://pubbimgkcst.blob.core.windows.net/bluearchive/drops2/locales/en.json
-
-const { t } = await useFetchI18nData(
-    useI18n({ useScope: "local", missingWarn: false, fallbackWarn: false }),
-    "test-locale",
+const { t, locale, pending } = await useFetchI18nData(
     (l) =>
         `https://pubbimgkcst.blob.core.windows.net/bluearchive/drops2/locales/${l}.json`,
 );
-
-const route = useRoute();
-const routeBaseName = useRouteBaseName();
-const localePath = useLocalePath();
 </script>

@@ -1,0 +1,120 @@
+{
+    "sec1": {
+        "t1": "Drops Campaign",
+        "t2": "SEASON 1.",
+        "t3": "Campaign Schedule: 12/16/2025 (Tue) After Maintenance – 12/30/2025 (Tue) Before Maintenance",
+        "t4": "Watch Blue Archive live streams and earn various rewards!\nYou'll earn special rewards based on your watch time!"
+    },
+    "": "",
+    "sec2": {
+        "t1": "Drops *{Total Watch Time}* Rewards!",
+        "t2": "15 min ",
+        "t3": "*{Credit Points × 100,000}*",
+        "t4": "30 min",
+        "t5": "*{Normal Activity Report × 5}*\n*{Advanced Activity Report × 5}*",
+        "t6": "60 min",
+        "t7": "*{Normal Enhancement Stone × 10}*\n*{Advanced Enhancement Stone × 10}*",
+        "t8": "90 min",
+        "t9": "*{Pyroxene × 360}*",
+        "t10": "* You must watch live streams *{with Drops enabled}* under the Blue Archive category.\r\n* Rewards will be sent as you reach each watch time milestone."
+    },
+    "sec3": {
+        "t1": "Link Drops *{Accounts}*",
+        "t2": "STEP 1.",
+        "t3": "Link Drops Account",
+        "t4": "You can receive Drops rewards from both platforms by linking your game, Chzzk, and Twitch accounts.",
+        "t5": "Use the Link Account buttons to check that your accounts are linked and review your reward status.",
+        "t6": "The Chzzk service is only available in Korea, and it may be difficult to access Twitch in Korea.",
+        "t7": "Link Chzzk Account",
+        "t8": "Link Twitch Account",
+        "t9": "",
+        "t10": "STEP 2.",
+        "t11": "Watch Streams",
+        "t12": "Watch live streams with Blue Archive Drops enabled and follow the instructions below to claim your Drops rewards.",
+        "t13": "Chzzk → \"Request Drops\" in Drops Inventory\nTwitch → \"Claim\" in Drops Inventory",
+        "t14": "Chzzk\nWatch Stream",
+        "t15": "Twitch\nWatch Stream"
+    },
+    "sec4": {
+        "t1": "Drops Campaign *{FAQ}*",
+        "t2": "Chzzk",
+        "t3": "Twitch",
+        "t4": "Check out the frequently asked questions about Drops!"
+    },
+    "twitch": {
+        "faqs": {
+            "lists": {
+                "list1": {
+                    "q": "What are Twitch Drops?",
+                    "a": "With Twitch Drops, you can obtain in-game loot by watching \"Blue Archive\" live streams on Twitch.\u003Cbr/\u003E Connect your Twitch and Blue Archive accounts on this page and watch live streams to earn rewards."
+                },
+                "list2": {
+                    "q": "Which Twitch live streams should I watch to get rewards?",
+                    "a": "Watching live streams participating in Blue Archive Twitch Drops will help you earn rewards.​"
+                },
+                "list3": {
+                    "q": "How do I connect my Twitch and game accounts?",
+                    "a": "You can connect your account by going to the event page \u003E \"Connect Twitch Drops.\" \u003Cbutton type='button' scroll-to='_linking'\u003EShortcut\u003C/button\u003E"
+                },
+                "list4": {
+                    "q": "How do I disconnect my Twitch and game accounts?",
+                    "a": "Go to the event page \u003E \"Connect Twitch Drops\" to disconnect your game account. \u003Cbutton type='button' scroll-to='_linking'\u003EShortcut\u003C/button\u003E\n\u003Cbr/\u003E\u003Cbr/\u003E\nTo disconnect your Twitch account, visit the official Twitch website and log out. You must use the same browser you initially used to connect your account. \u003Ca href='https://www.twitch.tv/' target='_blank'\u003EShortcut\u003C/a\u003E​"
+                },
+                "list5": {
+                    "q": "How can I check my reward progress?",
+                    "a": "You can check your progress on the Twitch Drops Inventory page. \u003Ca href='https://www.twitch.tv/drops/inventory' target='_blank'\u003EShortcut\u003C/a\u003E"
+                },
+                "list6": {
+                    "q": "How many Twitch Drops rewards can I get?",
+                    "a": "After meeting the watch time requirement, you can collect Twitch Drops rewards once per Twitch account.\u003Cbr/\u003E\nPlease carefully select the account you want to use for the rewards.\u003Cbr/\u003E\nYou can claim rewards by logging into the game and checking your mailbox."
+                },
+                "list7": {
+                    "q": "Why isn't my watch time being counted?",
+                    "a": "Your watch time may not be counted if the stream's audio is muted or if it is playing in the background.\u003Cbr/\u003EPlease check if your browser or tab is muted or playing in the background."
+                },
+                "list8": {
+                    "q": "Where are my earned rewards?",
+                    "a": "If you've connected your accounts but haven't received your rewards yet, please try the following:​\u003Cbr/\u003E​\u003Cbr/\u003E\r\n1. Verify that the Twitch account you used to watch live streams is connected to the game (Steam) account that you use to play Blue Archive.​​\u003Cbr/\u003E\r\n2. Verify that the connected game account is the one you use to play Blue Archive.​​\u003Cbr/\u003E\r\n3. Verify that you clicked the \"Claim\" button in your Twitch Drops Inventory.​​\u003Cbr/\u003E\r\n4. Enter the Shop through the \"Buy Pyroxene\" button in the lobby. You will receive your rewards shortly after.\u003Cbr/\u003E\r\n5. Verify that you have watched live streams on channels participating in Blue Archive Twitch Drops.​​\u003Cbr/\u003E\r\n6. Verify your current progress in the Twitch Drops Inventory to see if you have reached the required watch time. \u003Ca href='https://www.twitch.tv/drops/inventory' target='_blank'\u003EShortcut\u003C/a\u003E\r\n7. If you have completed all the steps above and still have not received your reward, please reconnect to the game."
+                }
+            }
+        }
+    },
+    "chzzk": {
+        "faqs": {
+            "lists": {
+                "list1": {
+                    "q": "What are Chzzk Drops?",
+                    "a": "With Chzzk Drops, you can obtain in-game loot by watching \"Blue Archive\" live streams on Chzzk. You can participate in Chzzk Drops campaigns after using this page to connect your Chzzk and Blue Archive accounts."
+                },
+                "list2": {
+                    "q": "Which Chzzk live streams should I watch to get rewards?",
+                    "a": "Watch live streams participating in Blue Archive Chzzk Drops rewards to accumulate watch time.​"
+                },
+                "list3": {
+                    "q": "How do I connect my Chzzk and game accounts?",
+                    "a": "You can connect your account by going to the event page \u003E \"Connect Chzzk Drops.\"  \u003Cbutton type='button' scroll-to='_linking'\u003E[Shortcut]\u003C/button\u003E"
+                },
+                "list4": {
+                    "q": "How do I disconnect my Chzzk and game accounts?",
+                    "a": "Go to the event page \u003E \"Connect Chzzk Drops\" to disconnect your game account. \u003Cbutton type='button' scroll-to='_linking'\u003E[Shortcut]\u003C/button\u003E \u003Cbr/\u003E \u003Cbr/\u003E\n\nTo disconnect your Chzzk account, visit the official Chzzk website and log out. You must use the same browser you initially used to connect your account.  \u003Ca href='https://chzzk.naver.com/' target='_blank'\u003E[Shortcut]​\u003C/a\u003E"
+                },
+                "list5": {
+                    "q": "How can I check my reward progress?",
+                    "a": "You can check your progress on the Chzzk Drops Inventory page. \u003Ca href='https://game.naver.com/profile#drops' target='_blank'\u003E[Shortcut]​\u003C/a\u003E"
+                },
+                "list6": {
+                    "q": "How many Chzzk Drops rewards can I get?",
+                    "a": "After meeting the watch time requirement, you can collect Chzzk Drops rewards once per Chzzk account.\nPlease carefully select the account you want to use for the rewards.\nYou can claim rewards by logging into the game and checking your mailbox."
+                },
+                "list7": {
+                    "q": "Why isn't my watch time being counted?",
+                    "a": "Your watch time may not be counted if the stream's audio is muted or if it is playing in the background.\nPlease check if your browser or tab is muted or playing in the background."
+                },
+                "list8": {
+                    "q": "Where are my earned rewards?",
+                    "a": "If you've connected your accounts but haven't received your rewards yet, please try the following: \u003Cbr/\u003E \u003Cbr/\u003E\n1. Verify that the Chzzk account you used to watch live streams is connected to the game (Steam) account that you use to play Blue Archive\u003Cbr/\u003E\n2. Verify that the connected game account is the one you use to play Blue Archive.​\u003Cbr/\u003E\n3. Verify that you clicked the \"Request Drops\" button in your Chzzk Drops Inventory and logged into the game during the event\u003Cbr/\u003E\n- Drops can be claimed after logging into the game during the Drops event and after completing Drops requirements.\u003Cbr/\u003E\n4. Click \"Buy Pyroxene\" in the lobby to enter the Shop, then check for rewards in your mailbox.\u003Cbr/\u003E\n5. Verify that you have watched live streams on channels participating in Blue Archive Chzzk Drops.​​\u003Cbr/\u003E\n6. Verify your current progress in the Chzzk Drops Inventory to see if you have reached the required watch time.\u003Ca href='https://game.naver.com/profile#drops' target='_blank'\u003EShortcut\u003C/a\u003E\n7. If none of the methods above worked, please exit and reconnect to the game."
+                }
+            }
+        }
+    }
+}

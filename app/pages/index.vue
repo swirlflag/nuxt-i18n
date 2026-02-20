@@ -6,5 +6,5 @@
     </div>
 </template>
 <script setup>
-const { locale } = useI18n();
+const { locale, messages } = useI18n();
 </script>

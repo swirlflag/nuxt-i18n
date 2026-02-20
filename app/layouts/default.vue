@@ -8,6 +8,10 @@
             <NuxtLinkLocale to="/">{{ t("nav.home") }} </NuxtLinkLocale>
             &nbsp;
             <NuxtLinkLocale to="/about"> {{ t("nav.about") }} </NuxtLinkLocale>
+            &nbsp;
+            <NuxtLinkLocale to="/contact">
+                {{ t("nav.contact") }}
+            </NuxtLinkLocale>
         </div>
         <div>
             <select @change="onChangeLocale">
@@ -24,18 +28,22 @@
 </template>
 
 <script setup>
-const { t, setLocale, locale, locales } = useI18n({
+const { t, setLocale, locale, locales, messages } = useI18n({
     useScope: "local",
     messages: {
-        ko: { "nav.home": "홈", "nav.about": "소개" },
-        en: { "nav.home": "home", "nav.about": "about" },
+        ko: { "nav.home": "홈", "nav.about": "소개", "nav.contact": "연락" },
+        en: {
+            "nav.home": "home",
+            "nav.about": "about",
+            "nav.contact": "contact",
+        },
     },
 });
+
+const routeBaseName = useRouteBaseName();
 const localePath = useLocalePath();
+
 const onChangeLocale = (e) => {
-    const cookiePrefer = useCookie("APP_PREFER_LOCALE"); // 유저 선택
-    const selectedLocale = e.target.value;
-    setLocale(selectedLocale);
-    cookiePrefer.value = selectedLocale;
+    setI18nLocale(e.target.value);
 };
 </script>

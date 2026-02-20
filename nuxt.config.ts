@@ -3,14 +3,17 @@ const config = {
     devtools: { enabled: true },
     modules: ["@nuxtjs/i18n"],
     i18n: {
-        detectBrowserLanguage: false,
-        defaultLocale: "en",
+        detectBrowserLanguage: {
+            useCookie: false,
+            redirectOn: "root",
+        },
         lazy: true,
         strategy: "prefix_and_default",
         customRoutes: "config",
+        defaultLocale: "en",
         locales: [
-            { code: "en", name: "English", region: "US", language: "en" },
-            { code: "ko", name: "한국어", region: "KR", language: "ko" },
+            { code: "en", name: "English", language: "en-US", file: "en.json" },
+            { code: "ko", name: "한국어", language: "ko-KR", file: "ko.json" },
         ],
         pages: {
             about: {
