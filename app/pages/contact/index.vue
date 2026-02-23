@@ -13,7 +13,5 @@ const { t, locale, messages } = await useFetchI18nData(
         `https://pubbimgkcst.blob.core.windows.net/dwm/dwm.nexon.com/locales/${l}.json`,
 );
 
-console.log(messages.value);
-
 const route = useRoute();
 </script>

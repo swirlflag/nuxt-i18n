@@ -1,55 +1,42 @@
 export const useFetchI18nData = async (urlTemplate) => {
     const i18n = useI18n({ useScope: "local" });
     const { locale, setLocaleMessage, getLocaleMessage } = i18n;
-
     const previousData = ref(null);
 
-    // ✅ locale 변경 시, 재렌더 전에 새 locale messages를 previousData로 선점
     watch(locale, (newLocale) => {
         if (!previousData.value) return;
         const existing = getLocaleMessage(newLocale);
-        setLocaleMessage(newLocale, {
-            ...previousData.value, // 이전 언어 데이터로 임시 채움
-            ...existing, // 이미 실제 데이터가 있으면 덮어쓰지 않음
-        });
+        if (Object.keys(existing).length > 0) return;
+        setLocaleMessage(newLocale, previousData.value);
     });
 
-    const { data, pending, status } = await useAsyncData(
-        urlTemplate(locale.value),
-        () => $fetch(urlTemplate(locale.value)),
+    const { data, pending, status, error } = await useFetch(
+        () => urlTemplate(locale.value),
         {
-            lazy: true,
+            lazy: false,
             watch: [locale],
             default: () => previousData.value,
             getCachedData: (key, nuxtApp) => {
-                const cached =
-                    nuxtApp.payload.data[key] ?? nuxtApp.static.data[key];
-                if (cached) {
-                    const existing = getLocaleMessage(locale.value);
-                    setLocaleMessage(locale.value, { ...existing, ...cached });
-                }
-                return cached;
+                return nuxtApp.payload.data[key] ?? nuxtApp.static.data[key];
             },
         },
     );
 
-    watch(data, (now) => {
-        if (now) previousData.value = now;
-    });
-
     watch(
-        status,
-        (now) => {
-            if (now === "success" && data.value) {
+        [data, status],
+        ([nowData, nowStatus]) => {
+            if (nowStatus === "success" && nowData) {
+                previousData.value = nowData;
                 const existing = getLocaleMessage(locale.value);
-                setLocaleMessage(locale.value, { ...existing, ...data.value });
+                setLocaleMessage(locale.value, { ...existing, ...nowData });
             }
         },
         { immediate: true },
     );
 
-    return { ...i18n, pending };
+    return { ...i18n, pending, status, error };
 };
+
 export const setI18nLocale = (locale) => {
     const { $i18n } = useNuxtApp();
     $i18n.setLocale(locale);

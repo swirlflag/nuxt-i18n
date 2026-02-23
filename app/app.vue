@@ -17,7 +17,7 @@ useHead(() => ({
     meta: [...(i18nHead.value.meta || [])],
 }));
 
-console.log(messages.value);
+// console.log(messages.value);
 
 useSeoMeta({
     title: () => t("head.title"),

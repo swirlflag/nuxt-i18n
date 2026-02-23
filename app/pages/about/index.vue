@@ -5,8 +5,11 @@
 
         {{ t("sec2.t4") }}
         <br />
-        {{ t("sec3.t4") }}
+        <div id="ttt">
+            {{ t("sec3.t4") }}
+        </div>
         <br />
+
         {{ t("head.title") }}
     </div>
 </template>
@@ -20,4 +23,8 @@ const { t, locale, pending } = await useFetchI18nData(
     (l) =>
         `https://pubbimgkcst.blob.core.windows.net/bluearchive/drops2/locales/${l}.json`,
 );
+
+onMounted(() => {
+    console.log(document.querySelector("#ttt").textContent);
+});
 </script>
